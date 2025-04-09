@@ -1,0 +1,108 @@
+
+<!--
+*******************************************************************************
+Turma: ESOFT3
+Nome: Lorena Andrade de Souza, Ana Gabrielle Dropa de Araújo, Vanusa Da Silva de Almeida, Matheus de Souza Calisto
+Disciplina: Programação Front-End
+Professor: José Carlos Flores
+Data final da entrega do trabalho: 08 de Abril de 2025
+Descritivo: Os alunos deverão criar um site com um tema livre, aplicando os conceitos de HTML para estruturação do conteúdo, CSS para estilização e apresentação visual, e JavaScript para
+adicionar interatividade e dinamismo à página. O site deve ser funcional, responsivo (adaptável a
+diferentes tamanhos de tela) e apresentar um design agradável e intuitivo
+********************************************************************************
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="image/logo.png">
+    <title>Minecraft: Home</title>
+    <!-- Importando arquivos CSS -->
+    <link rel="stylesheet" href="Css/Index.css">
+    <link rel="stylesheet" href="Css/Global.css">
+</head>
+
+<body>
+
+    <!-- Navegação -->
+    <nav class="main">
+        <div class="blocks">
+            <!-- Bloco de itens -->
+            <div class="block">
+                <a href="Itens.html">
+                    <img src="image/Chest.jpg" alt="Itens">
+                    <span class="text">ITENS</span>
+                </a>
+            </div>
+            <!-- Bloco de login -->
+            <div class="block">
+                <a href="Login.html">
+                    <img src="image/mojangicon.png" alt="Login">
+                    <span class="text">LOGIN</span>
+                </a>
+            </div>
+            <!-- Bloco de informações -->
+            <div class="block">
+                <a href="More.html">
+                    <img src="image/Cartography.png" alt="Info">
+                    <span class="text">Info</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Portal para o Nether -->
+        <div class="portal">
+            <a onclick="ScrolltoNether()">
+                <img src="image/netherportal.png" alt="Ir para o nether">
+                <span class="text">IR PARA O NETHER</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <div>
+            <img src="image/logo.png" alt="Logo">
+        </div>
+    </header>
+
+    <!-- Divisória de terra -->
+    <div class="dirt"></div>
+
+    <!-- Conteúdo principal -->
+    <main class="main1">
+        <section class="mdiv">
+            <div class="div1">
+                <h2>O que seria?</h2>
+                <p class="text1">
+                    Introdução a um jogo sandbox de blocos.
+                    O Minecraft é um jogo composto por blocos, criaturas e pela comunidade. Podes sobreviver à noite ou
+                    criar uma obra de arte: a escolha é tua. Mas se o pensamento de explorar um vasto mundo novo por si
+                    só for avassalador, não tenhas medo! Vamos explorar de que se trata o Minecraft!
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Vídeo do YouTube -->
+    <div id="NetherWord" class="main2">
+        <iframe width="500" height="300"
+                src="https://www.youtube.com/embed/1DhWXAiNgfQ?si=F47Vy_lzwLjfjmos" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer>
+        © 2025 Minecraft Showcase
+    </footer>
+
+    <!-- Importando arquivo JavaScript -->
+    <script src="JavaScript.js"> </script>
+</body>
+
+</html>

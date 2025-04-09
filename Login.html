@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minecraft: Login</title>
+  <!-- Importando arquivos CSS -->
+  <link rel="stylesheet" href="Css/Login.css">
+  <link rel="stylesheet" href="Css/Global.css">
+  <style>
+    /* Animação de shake */
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
+
+    .shake {
+      animation: shake 0.3s;
+    }
+  </style>
+</head>
+<body class="Login">
+
+  <!-- Áudio de erro -->
+  <audio id="errorSound" src="erro.mp3" preload="auto"></audio>
+
+  <!-- Cabeçalho da página -->
+  <header>
+    <a class="return2" href="index.html"><img class="return" src="image/Arrow.png" alt="Seta de retorno"></a>
+    <a class="titulo">LOGIN</a>
+  </header>
+  
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- Formulário de login -->
+    <form id="loginForm">
+      <h3>ENTRAR</h3>
+
+      <!-- Campo de email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <!-- Campo de senha -->
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required><br><br>
+
+      <!-- Botões de ação -->
+      <div class="buttons">
+        <input type="submit" value="Entrar">
+        <input type="button" value="Cadastre-se" onclick="Trocarpag()">
+      </div><br><br>
+    </form>
+  </main>
+
+  <!-- Rodapé da página -->
+  <footer>
+    © 2025 Minecraft Showcase
+  </footer>
+
+  <!-- Importando arquivo JavaScript -->
+  <script src="JavaScript.js"></script>
+</body>
+</html>

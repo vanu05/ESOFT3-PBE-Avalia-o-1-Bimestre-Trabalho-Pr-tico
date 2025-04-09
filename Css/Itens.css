@@ -1,0 +1,180 @@
+/* Estilos globais para o corpo da página */
+body {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    background: url(https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/areia.jpg); /* Define a imagem de fundo */
+    background-size: auto; /* Define o tamanho do fundo */
+    display: flex; /* Define o layout flexível */
+    flex-direction: column; /* Define a direção do layout flexível */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background: url(https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/gravel.png); /* Define a imagem de fundo */
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+    width: 100%; /* Define a largura */
+    height: 100px; /* Define a altura */
+    display: flex; /* Define o layout flexível */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    color: white; /* Define a cor do texto */
+    font-size: 2rem; /* Define o tamanho da fonte */
+}
+
+/* Estilos para o título */
+.titulo {
+    transition: 0.5s; /* Define a transição */
+    position: absolute; /* Define a posição absoluta */
+}
+
+/* Estilos para o segundo título */
+.SecondTitulo {
+    color: rgb(2, 0, 0); /* Define a cor do texto */
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+    text-align: center; /* Centraliza o texto */
+    margin: 50px 0; /* Define a margem */
+}
+
+/* Estilos para o botão de retorno */
+.return {
+    width: 70px; /* Define a largura */
+    height: 50px; /* Define a altura */
+    position: absolute; /* Define a posição absoluta */
+    left: 10px; /* Define a posição à esquerda */
+    transition: 0.5s; /* Define a transição */
+    rotate: -135deg; /* Validação de CSS da erro, mas queremos manter esta rotação na imagem, não na animação */
+}
+
+/* Estilos para o segundo botão de retorno */
+.return2 {
+    width: 70px; /* Define a largura */
+    height: 50px; /* Define a altura */
+    position: absolute; /* Define a posição absoluta */
+    left: 10px; /* Define a posição à esquerda */
+    transition: 0.5s; /* Define a transição */
+}
+
+/* Efeito de hover para o botão de retorno */
+.return:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do botão */
+}
+
+/* Estilos para o conteúdo principal */
+main { 
+    display: flex; /* Define o layout flexível */
+    margin: 100px 0; /* Define a margem */
+    width: 100%; /* Define a largura */
+    height: auto; /* Define a altura automática */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 1rem; /* Define o espaçamento entre os itens */
+}
+
+/* Estilos para o carrossel */
+.carrossel {
+    position: relative; /* Define a posição relativa */
+    display: flex; /* Define o layout flexível */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    width: 90%; /* Define a largura */
+}
+
+/* Estilos para os cartões */
+.card {
+    opacity: 0; /* Define a opacidade */
+    background-color: rgba(255, 255, 255, 0.425); /* Define a cor de fundo */
+    position: absolute; /* Define a posição absoluta */
+    width: 100%; /* Define a largura */
+    height: 400px; /* Define a altura */
+    border-radius: 30px; /* Define o raio da borda */
+    transition: opacity 0.2s; /* Define a transição de opacidade */
+    display: flex; /* Define o layout flexível */
+    flex-wrap: wrap; /* Define a quebra de linha flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    z-index: 1; /* Define a ordem de empilhamento */
+}
+
+/* Estilos responsivos para telas de 768px */
+@media (width: 768px) {
+    .card {
+        height: 100px; /* Define a altura */
+    }
+}
+
+/* Estilos para o cartão selecionado */
+.selected {
+    opacity: 1; /* Define a opacidade */
+    pointer-events: auto; /* Habilita os eventos de ponteiro */
+    z-index: 2; /* Define a ordem de empilhamento */
+}
+
+/* Estilos para os botões de navegação */
+#prev-button, #next-button {
+    width: 30px; /* Define a largura */
+    height: 300px; /* Define a altura */
+    border: none; /* Remove a borda */
+    background-color: rgba(255, 255, 255, 0); /* Define a cor de fundo transparente */
+    cursor: pointer; /* Define o cursor */
+    transition: 0.3s; /* Define a transição */
+    border-radius: 3px; /* Define o raio da borda */
+    z-index: 10; /* Define a ordem de empilhamento */
+}
+
+/* Efeito de hover para os botões de navegação */
+#prev-button:hover, #next-button:hover {
+    transform: scale(1.2); /* Aumenta o tamanho do botão */
+    background-color: rgba(255, 255, 255, 0.322); /* Define a cor de fundo */
+}
+
+/* Estilos para os blocos */
+.block {
+    background-color: #8040007c; /* Define a cor de fundo */
+    border-radius: 5px; /* Define o raio da borda */
+    width: 150px; /* Define a largura */
+    height: 150px; /* Define a altura */
+    display: flex; /* Define o layout flexível */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    margin: 10px; /* Define a margem */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    transition: 0.2s; /* Define a transição */
+    cursor: pointer; /* Define o cursor */
+}
+
+/* Efeito de hover para os blocos */
+.block:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do bloco */
+}
+
+/* Estilos para as imagens dentro dos blocos */
+.block img {
+    width: 100%; /* Define a largura */
+    border-radius: 3px; /* Define o raio da borda */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: url(https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/gravel.png); /* Define a imagem de fundo */
+    width: 100%; /* Define a largura */
+    position: relative; /* Define a posição relativa */
+    bottom: 0px; /* Define a posição inferior */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    main {
+        justify-content: space-between; /* Define a distribuição dos itens */
+        width: 80%; /* Define a largura */
+    }
+
+    .block {
+        width: 20%; /* Define a largura */
+        height: 20%; /* Define a altura */
+    }
+
+    main {
+        width: 100%; /* Define a largura */
+    }
+}

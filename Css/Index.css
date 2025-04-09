@@ -1,0 +1,188 @@
+/* Estilos globais para o corpo da página */
+body {
+    background-color: black; /* Define a cor de fundo */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-image: url(https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/Grass.jpg); /* Define a imagem de fundo */
+    background-color: lime; /* Define a cor de fundo */
+    width: 100%; /* Define a largura */
+    height: 100px; /* Define a altura */
+}
+
+/* Estilos para o título no cabeçalho */
+header h2 {
+    margin: 0; /* Remove a margem */
+}
+
+/* Estilos para o div dentro do cabeçalho */
+header div {
+    display: flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza o conteúdo */
+}
+
+/* Estilos para a seção principal */
+.main {
+    height: 600px; /* Define a altura */
+    background: url(https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/Ceu.jpg); /* Define a imagem de fundo */
+    background-size: cover; /* Define o tamanho do fundo */
+    background-position: center; /* Centraliza o fundo */
+}
+
+/* Estilos para a seção de terra */
+.dirt {
+    height: 300px; /* Define a altura */
+    background: url(https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/Dirt.jpg); /* Define a imagem de fundo */
+}
+
+/* Estilos para a primeira seção principal */
+.main1 {
+    height: 800px; /* Define a altura */
+    background: local; /* Define o fundo local */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(0, 0, 0)), url(https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/Stone.jpg); /* Define o gradiente e a imagem de fundo */
+}
+
+/* Estilos para a div principal */
+.mdiv {
+    display: flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza o conteúdo */
+}
+
+/* Estilos para a seção dentro da div principal */
+.mdiv section { 
+    width: 100%; /* Define a largura */
+}
+
+/* Estilos para a div interna */
+.div1 {
+    padding: 20px; /* Define o padding */
+    color: white; /* Define a cor do texto */
+    text-align: center; /* Centraliza o texto */
+    width: 60%; /* Define a largura */
+}
+
+/* Estilos para o título dentro da div interna */
+.div1 h2 {
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+    font-size: 36px; /* Define o tamanho da fonte */
+    margin: 0; /* Remove a margem */
+    color: white; /* Define a cor do texto */
+}
+
+/* Estilos para os blocos */
+.blocks {
+    display: flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza o conteúdo */
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+}
+
+/* Estilos para cada bloco */
+.block {
+    width: 100px; /* Define a largura */
+    height: 100px; /* Define a altura */
+    background-color: rgba(255, 255, 255, 0); /* Define a cor de fundo transparente */
+    margin: 500px 10px; /* Define a margem */
+    position: relative; /* Define a posição relativa */
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+    transition: 0.2s ease; /* Define a transição */
+}
+
+/* Efeito de hover para os blocos */
+.block:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do bloco */
+}
+
+/* Estilos para o portal */
+.portal {
+    width: 300px; /* Define a largura */
+    height: 400px; /* Define a altura */
+    background-color: rgba(255, 255, 255, 0); /* Define a cor de fundo transparente */
+    margin: -900px auto; /* Define a margem */
+}
+
+/* Estilos para a imagem dentro do portal */
+.portal img {
+    width: 100%; /* Define a largura */
+    height: 100%; /* Define a altura */
+}
+
+/* Estilos para a imagem dentro dos blocos */
+.block img {
+    width: 100%; /* Define a largura */
+    height: 100%; /* Define a altura */
+    position: relative; /* Define a posição relativa */
+    transition: opacity 0.6s ease; /* Define a transição de opacidade */
+}
+
+/* Efeito de hover para a imagem dentro dos blocos */
+.block:hover img {
+    opacity: 0.4; /* Reduz a opacidade */
+}
+
+/* Efeito de hover para a imagem dentro dos blocos e do portal */
+.block img:hover,
+.portal img:hover {
+    box-shadow: 0px 0px 0px 3px rgba(255, 255, 255, 0.75); /* Adiciona sombra */
+}
+
+/* Estilos para a segunda seção principal */
+.main2 {
+    background: linear-gradient(to bottom, black, rgba(255, 255, 255, 0)), url(https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/Nether.jpg); /* Define o gradiente e a imagem de fundo */
+    height: 800px; /* Define a altura */
+    background-size: cover; /* Define o tamanho do fundo */
+    background-position: center; /* Centraliza o fundo */
+    display: flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza o conteúdo */
+    padding: 100px; /* Define o padding */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    iframe {
+        width: 150%; /* Define a largura */
+        height: 40%; /* Define a altura */
+        padding: 150px 0; /* Define o padding */
+    }
+
+    .main2 {
+        height: 400px; /* Define a altura */
+    }
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: url(https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/netherack.jpg); /* Define a imagem de fundo */
+}
+
+/* Estilos para o texto */
+.text {
+    display: none; /* Oculta o texto */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+    color: rgba(226, 9, 9, 0); /* Define a cor do texto */
+    transition: 0.2s; /* Define a transição */
+    position: absolute; /* Define a posição absoluta */
+    top: 50%; /* Define a posição superior */
+    left: 50%; /* Define a posição esquerda */
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    pointer-events: none; /* Desativa os eventos de ponteiro */
+    padding: 10px; /* Define o padding */
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black; /* Adiciona sombra ao texto */
+}
+
+/* Efeito de hover para o texto dentro dos blocos e do portal */
+.block:hover .text, .portal:hover .text {
+    display: block; /* Exibe o texto */
+    color: white; /* Define a cor do texto */
+    font-size: 16px; /* Define o tamanho da fonte */
+    text-shadow: 1px 1px 2px black, -1px -1px 2px black; /* Adiciona sombra ao texto */
+}
+
+/* Estilos para o texto adicional */
+.text1 {
+    font-size: large; /* Define o tamanho da fonte */
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+}

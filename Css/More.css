@@ -1,0 +1,82 @@
+/* Estilos globais para o corpo da página */
+body {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+    background-size: auto; /* Define o tamanho do fundo */
+    background-position: center; /* Centraliza o fundo */
+    background-repeat: no-repeat; /* Define que o fundo não se repete */
+    background-image: url('https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/fundo_Mine.png'); /* Define a imagem de fundo */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+    background-image: url('https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/fundo_Mine.png'); /* Define a imagem de fundo */
+    display: flex; /* Define o layout flexível */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    height: 100px; /* Define a altura */
+    color: white; /* Define a cor do texto */
+    background-color: brown; /* Define a cor de fundo */
+    font-size: 2rem; /* Define o tamanho da fonte */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    position: relative; /* Define a posição relativa */
+}
+
+/* Estilos para os botões de retorno */
+.return, .return2 {
+    width: 70px; /* Define a largura */
+    height: 50px; /* Define a altura */
+    position: absolute; /* Define a posição absoluta */
+    left: 10px; /* Define a posição à esquerda */
+    transition: 0.5s; /* Define a transição */
+}
+
+/* Estilos específicos para o botão de retorno */
+.return {
+    rotate: -135deg; /* Validação de CSS da erro, mas queremos manter esta rotação na imagem, não na animação */
+}
+
+/* Efeito de hover para o botão de retorno */
+.return:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do botão */
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    display: flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-direction: column; /* Define a direção do layout flexível */
+    background-color: rgb(226, 226, 226); /* Define a cor de fundo */
+    box-shadow: 5px 5px 10px 5px rgb(122, 122, 122); /* Adiciona sombra */
+    padding: 20px; /* Define o padding */
+    border-radius: 10px; /* Define o raio da borda */
+    margin: 100px auto; /* Define a margem */
+    width: min-content; /* Define a largura mínima */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: brown; /* Define a cor de fundo */
+    position: relative; /* Define a posição relativa */
+    bottom: 0px; /* Define a posição inferior */
+    width: 100%; /* Define a largura */
+}
+
+/* Estilos para os títulos dentro do conteúdo principal */
+main h2 {
+    color: black; /* Define a cor do texto */
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    main {
+        width: 80%; /* Define a largura */
+    }
+
+    iframe {
+        width: 100%; /* Define a largura */
+    }
+}

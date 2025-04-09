@@ -1,0 +1,107 @@
+/* Estilos globais para o corpo da página */
+body {
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    background: url(https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/Ceu.jpg); /* Define a imagem de fundo */
+    background-size: auto; /* Define o tamanho do fundo */
+    display: flex; /* Define o layout flexível */
+    flex-direction: column; /* Define a direção do layout flexível */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+    -webkit-text-stroke: 1px black; /* Adiciona contorno ao texto */
+    width: 100%; /* Define a largura */
+    height: 100px; /* Define a altura */
+    display: flex; /* Define o layout flexível */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Adiciona sombra */
+    color: black; /* Define a cor do texto */
+    font-size: 2rem; /* Define o tamanho da fonte */
+}
+
+/* Estilos para o botão de retorno */
+.return {
+    width: 70px; /* Define a largura */
+    height: 50px; /* Define a altura */
+    position: absolute; /* Define a posição absoluta */
+    left: 10px; /* Define a posição à esquerda */
+    transition: 0.5s; /* Define a transição */
+    rotate: -135deg; /* Validação de CSS da erro, mas queremos manter esta rotação na imagem, não na animação */
+}
+
+/* Estilos para o segundo botão de retorno */
+.return2 {
+    width: 70px; /* Define a largura */
+    height: 50px; /* Define a altura */
+    position: absolute; /* Define a posição absoluta */
+    left: 10px; /* Define a posição à esquerda */
+    transition: 0.5s; /* Define a transição */
+}
+
+/* Efeito de hover para o botão de retorno */
+.return:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do botão */
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    display: flex; /* Define o layout flexível */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    padding: 20px; /* Define o padding */
+    background: url(https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/TerraWalpaper2.png); /* Define a imagem de fundo */
+    border-radius: 10px; /* Define o raio da borda */
+    margin: 100px; /* Define a margem */
+    width: 90%; /* Define a largura */
+}
+
+/* Estilos para os títulos */
+h3 {
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+    text-align: center; /* Centraliza o texto */
+    font-size: 30px; /* Define o tamanho da fonte */
+}
+
+/* Estilos para o formulário */
+form {
+    color: white; /* Define a cor do texto */
+    display: flex; /* Define o layout flexível */
+    flex-direction: column; /* Define a direção do layout flexível */
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+    font-size: 20px; /* Define o tamanho da fonte */
+}
+
+/* Estilos para os botões */
+.buttons {
+    display: flex; /* Define o layout flexível */
+    padding: 2px; /* Define o padding */
+}
+
+/* Estilos para os inputs dentro dos botões */
+.buttons input {
+    width: 100%; /* Define a largura */
+    font-family: 'Font-Minecraft', sans-serif; /* Define a fonte */
+    background-color: white; /* Define a cor de fundo */
+}
+
+/* Efeito de hover para os inputs */
+.buttons input:hover, form input:hover {
+    background-color: lightgrey; /* Define a cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: url(https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/image/Ceu.jpg); /* Define a imagem de fundo */
+    width: 100%; /* Define a largura */
+    position: relative; /* Define a posição relativa */
+    bottom: 0px; /* Define a posição inferior */
+}
+
+@font-face {
+    font-family: 'Font-Minecraft'; /* Nome da fonte */
+    src: url('https://loreandradee.github.io/ESOFT3-PBE-Avalia-o-1-Bimestre-Trabalho-Pr-tico/font/Font-Minecraft.otf') format('opentype'); /* Caminho para o arquivo da fonte e seu formato */
+}
